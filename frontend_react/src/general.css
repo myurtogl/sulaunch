@@ -1,0 +1,970 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.home-page {
+    font-family: "Montserrat", sans-serif;
+    width: 92.5%;
+    margin: auto;
+}
+
+.home {
+    font-family: "Montserrat", sans-serif;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.home-banner {
+    width: 100%;
+    margin-top: 5vh;
+}
+.home-stats-col-large {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40%;
+}
+
+.home-banner-title {
+    font-family: "Montserrat", sans-serif;
+    width: auto;
+    text-align: center;
+    font-size: 64px;
+    color: #173a6a;
+    font-weight: 600;
+}
+
+.home-banner-desc {
+    font-family: "Montserrat", sans-serif;
+    width: auto;
+    text-align: center;
+    font-size: 16px;
+    color: #5082c7;
+    font-weight: 600;
+}
+
+.home-banner-pill {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.withdraw-token-button {
+    margin-top: 5vh;
+    background-color: #173a6a;
+    display: flex;
+    flex: 0;
+    justify-content: center;
+    border-radius: 10px;
+    height: 5vh;
+    align-items: center;
+    max-width: 60%;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.whitelist-button {
+    width: 48%;
+    background-color: #173a6a;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    height: 5vh;
+    align-items: center;
+}
+.whitelist-button-profilepage {
+    width: 100%;
+    background-color: #173a6a;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    height: 5vh;
+    color: white;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+.whitelist-button-profilepage:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #5082c7;
+}
+.buy-token-button {
+    background-color: #173a6a;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    height: 5vh;
+    align-items: center;
+    max-width: 50%;
+}
+
+.apply-button {
+    padding: 1rem 4rem;
+    background-color: #173a6a;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    height: 5vh;
+    align-items: center;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.whitelist-button > a {
+    color: white;
+
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.home-banner-pill > a {
+    background-color: #173a6a;
+    padding: 1rem 4rem;
+    width: fit-content;
+    color: white;
+    border-radius: 500px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+.home-banner-pill > a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.home-stats {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.home-stats-col-small {
+    width: 30%;
+}
+.home-stats-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.home-stats-title {
+    font-family: "Montserrat", sans-serif;
+    width: auto;
+    font-size: 48px;
+    color: #173a6a;
+    font-weight: 600;
+}
+
+.home-stats-desc {
+    font-family: "Montserrat", sans-serif;
+    width: auto;
+    font-size: 16px;
+    color: #5082c7;
+    font-weight: 600;
+}
+
+.home-stats-stat-title {
+    font-family: "Montserrat", sans-serif;
+    width: auto;
+    font-size: 24px;
+    color: #5082c7;
+    font-weight: 600;
+}
+
+.home-stats-stat-value {
+    font-family: "Montserrat", sans-serif;
+    width: auto;
+    font-size: 36px;
+    color: #173a6a;
+    font-weight: 600;
+}
+
+.projects-page {
+    font-family: "Montserrat", sans-serif;
+    margin: 15vh auto auto auto;
+    width: 92.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.create-tokens-page {
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+    margin-top: 15vh;
+    width: 92.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-token-form {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-token-button {
+    padding: 1rem 4rem;
+    background-color: #173a6a;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    height: 5vh;
+    align-items: center;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.create-auction-page {
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+    margin-top: 15vh;
+    width: 92.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.create-auction-button {
+    padding: 1rem 4rem;
+    background-color: #173a6a;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    height: 5vh;
+    align-items: center;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.bottom-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-detail-page {
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    margin: 15vh auto auto auto;
+    width: 92.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.auction-detail-page {
+    font-family: "Montserrat", sans-serif;
+    margin: 15vh auto auto auto;
+    width: 92.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.auction-info-row {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.auction-info-chart {
+    margin-top: 5vh;
+    display: flex;
+}
+
+.auction-chart {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auction-info-row-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-card-projectpage {
+    background-color: #f4f4f4;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.item-card-projectpage > div {
+    width: 100%;
+}
+.card-text-projectpage {
+    padding: 2vh 1vw 0 1vw;
+}
+
+.card-total-projectpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-top-projectpage {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+}
+.card-top-profilepage {
+    padding: 2vh 1vw 0 1vw;
+}
+
+.card-bottom-projectpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40%;
+}
+
+.card-bottom-profilepage {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-title-projectpage {
+    text-align: start;
+    color: #173a6a;
+    font-family: "Montserrat", sans-serif;
+    font-size: x-large;
+}
+
+.invest-card-desc-projectpage {
+    text-align: start;
+    color: #5082c7;
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+    padding: 0vh 0vh 0vw 1vw !important;
+}
+
+.card-title-projectpage-with-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-desc-projectpage {
+    text-align: justify;
+    text-justify: inter-word;
+    color: #5082c7;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card-time-projectpage {
+    text-align: start;
+    color: #173a6a;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card-tokeninfo {
+    text-align: start;
+    color: #173a6a;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card-tokeninfo-time {
+    text-align: start;
+    color: #173a6a;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card-tokeninfo-fund-raise {
+    text-align: start;
+    color: #5082c7;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card-tokeninfo-limit {
+    text-align: start;
+    color: #5082c7;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card-tokeninfo-sale {
+    text-align: start;
+    color: #173a6a;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card-tokeninfo-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-info-projectpage {
+    justify-self: flex-end;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-field-title-projectpage {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card-field-value-projectpage {
+    text-align: left;
+    margin: auto;
+    padding: 0 2rem 0 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.ribbon-projectpage {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.about-style {
+    width: 92.5%;
+    margin: 15vh auto auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.about-paragraph {
+    font-family: "Montserrat", sans-serif;
+    text-indent: 3vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-project-members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ribbon-projectpage span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 5px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.whitelist-card {
+    margin-top: 5vh;
+    background-color: #f4f4f4;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30vh;
+    width: 40vw;
+}
+
+.invest-card {
+    margin-top: 5vh;
+    background-color: #f4f4f4;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 30vh;
+    width: 40vw;
+    align-items: center;
+}
+
+.invest-card > div {
+    width: 100%;
+    padding: 2vh 2vh 1vw 1vw;
+}
+
+.whitelist-card > div {
+    width: 100%;
+    padding: 2vh 2vh 1vw 1vw;
+}
+
+.item-card {
+    background-color: #f4f4f4;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.item-card > div {
+    width: 100%;
+}
+
+.item-card-profilepage {
+    background-color: #f4f4f4;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: flex;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.item-card-profilepage > div {
+    width: 100%;
+}
+.card-text {
+    padding: 2vh 0 0 1vw;
+}
+.card-title {
+    text-align: start;
+    color: #173a6a;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card-desc {
+    text-align: start;
+    color: #5082c7;
+    font-family: "Montserrat", sans-serif;
+}
+
+.profile-project-items {
+    width: 70%;
+}
+
+.card-info {
+    justify-self: flex-end;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-field-title {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card-field-value {
+    text-align: left;
+    margin: auto;
+    padding: 0 2rem 0 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 5px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ribbon-top-left span {
+    right: -10px;
+    top: 30px;
+    transform: rotate(315deg);
+}
+
+.rating-stars {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem 0 2rem;
+}
+
+.auctions-page {
+    font-family: "Montserrat", sans-serif;
+    margin: 15vh auto auto auto;
+    width: 92.5%;
+}
+
+.swap-page {
+    font-family: "Montserrat", sans-serif;
+    width: 92.5%;
+    margin: auto;
+}
+
+.apply-page {
+    font-family: "Montserrat", sans-serif;
+    width: 92.5%;
+    margin: 15vh auto auto auto;
+}
+.profile-page {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    width: 80%;
+    margin: 17vh auto auto auto;
+    height: 100vh;
+}
+.profile-card > div {
+    position: fixed;
+    margin: 0;
+}
+.profile-fixed {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 20%;
+    height: 50vh;
+    background-color: #f4f4f4;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.profile-fixed-card {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+}
+.profile-fixed-card > div > h1 {
+    color: #173a6a;
+    font-family: "Montserrat", sans-serif;
+}
+.profile-fixed-card > div > h5 {
+    color: #173a6a;
+    font-family: "Montserrat", sans-serif;
+}
+.profile-fixed-card > div > h5 > p {
+    color: #5082c7;
+    font-family: "Montserrat", sans-serif;
+}
+.app {
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+    min-height: 100vh;
+    max-height: auto;
+}
+.courasel {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+}
+.img-courasel {
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+}
+.info {
+    padding-left: 25px;
+    width: 640px;
+    font-family: "Montserrat", sans-serif;
+}
+.detail {
+    margin-top: 20px;
+    height: 250px;
+    overflow-x: auto;
+    overflow-y: auto;
+    font-family: "Montserrat", sans-serif;
+}
+.arrow {
+    opacity: 0.1;
+}
+.arrow:hover {
+    opacity: 1;
+}
+.mini-info {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbarcolor {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    background-color: #173a6a;
+    max-height: 56px;
+}
+
+.navbar-elements {
+    width: 80%;
+    margin: auto;
+}
+
+.navbar-element {
+    padding: 15px 20px;
+}
+
+.filter-button-active.btn.btn-primary {
+    background-color: #173a6a;
+    border-color: #173a6a;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.filter-button-deactive.btn.btn-primary {
+    background-color: #d9d8e1;
+    border-color: #173a6a;
+    color: #173a6a;
+}
+
+.navbar-brand {
+    font-family: "Montserrat", sans-serif;
+    background-color: #173a6a;
+}
+
+.nav-link {
+    font-family: "Montserrat", sans-serif;
+}
+
+.sectionName {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.simpletext {
+    font-family: "Montserrat", sans-serif;
+}
+
+.dropdown-item {
+    font-family: "Montserrat", sans-serif;
+}
+
+.name {
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn-to-detail {
+    font-family: "Montserrat", sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-rows: 400px;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.grid-container > div {
+    margin: auto;
+}
+
+.button {
+    margin: 1rem;
+    margin-top: 0;
+    color: #2f2d2e;
+    font: bold;
+    background-color: white;
+    border: 2px solid #8e00b9;
+    padding: 0.6rem;
+    border-radius: 6px;
+    text-align: center;
+    transition-duration: 0.5s;
+    animation: ease-in-out;
+    font-family: "Montserrat", sans-serif;
+}
+
+.button:hover {
+    background: linear-gradient(to left, #2d00f7, #ff0291);
+    transform: scale(1.2);
+    border: none;
+    color: white;
+}
+
+.auction-info > div {
+    margin: auto;
+}
+
+.circle,
+.custom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom {
+    flex-direction: column;
+}
+
+.balls {
+    display: flex;
+}
+
+.ball {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #173a6a;
+    margin-right: 10px;
+    animation: ball 0.5s ease infinite alternate;
+}
+
+.ball2 {
+    animation-delay: 0.1s;
+}
+
+.ball3 {
+    animation-delay: 0.2s;
+}
+
+@keyframes ball {
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.customText {
+    font-weight: 600;
+    font-size: x-large;
+    font-family: "Montserrat", sans-serif;
+}
+
+.admin {
+    width: 60%;
+    margin: auto;
+    margin-top: 15vh;
+}
+
+.admin-box {
+    width: 100%;
+    display: flex;
+}
+.admin-select-box {
+    background-color: #173a6a;
+    padding: 1rem;
+}
+
+.admin-scroll-box {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    overflow: auto;
+    margin-top: 1rem;
+}
+
+.admin-scroll-box > button {
+    text-align: left;
+    padding-left: 1rem;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.admin-info-box {
+    width: 60%;
+    margin: 0 auto 0 auto;
+}
+
+.info-name {
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    color: #173a6a;
+    font-weight: 600;
+}
+
+.info-field {
+    display: flex;
+}
+
+.info-field-name {
+    width: 25%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #173a6a;
+    font-weight: 600;
+    align-items: center;
+}
+
+.info-value {
+    width: 75%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #5082c7;
+    font-weight: 600;
+}
+
+.user-controls-label {
+    font-family: "Montserrat", sans-serif;
+    color: #173a6a;
+    font-weight: 600;
+}
+
+.user-controls {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-controls-col {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-controls-col > Button {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

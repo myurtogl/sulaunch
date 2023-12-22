@@ -1,0 +1,77 @@
+version: "3.4"
+
+x-database-info: &database-info
+  MYSQL_DATABASE: sulaunch
+  MYSQL_USER: sulaunch
+  MYSQL_PASSWORD: Susam135
+  MYSQL_ROOT_PASSWORD: Susam135
+# root and user password should be the same
+# the values are arbitrary and can be changed if not connected to an external database
+
+x-backend-domain: &backend-domain
+  REACT_APP_BACKEND_URL: http://sprojects.sabanciuniv.edu:5001
+  REACT_APP_FRONTEND_URL: http://sprojects.sabanciuniv.edu:3000
+  # backend port must match one of the ASPNETCORE_URLS
+  # http://localhost:5001 is used by default for backend
+  # http://localhost:3000 is used by default for frontend
+
+networks:
+  sulaunch_network:
+    driver: bridge
+
+services:
+  sulaunch_database: # delete this service if an external database is used
+    container_name: sulaunch_database
+    image: mysql:8.0.11
+    # ports: # this port should not be exposed to outside for security reasons.
+    #   - 3306:3306
+    volumes:
+      - sulaunch_database:/var/lib/mysql
+      - ./database_mysql:/docker-entrypoint-initdb.d
+    cap_add:
+      - SYS_NICE
+    networks:
+      - sulaunch_network
+    restart: always
+    environment:
+      <<: [*database-info]
+
+  sulaunch_backend:
+    container_name: sulaunch_backend
+    build:
+      context: ./backend_dotnet
+      dockerfile: Dockerfile
+    ports:
+      - 5001:5001
+    depends_on:
+      - sulaunch_database
+    environment:
+      <<: [*database-info, *backend-domain]
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://sulaunch_backend:5001
+      # port of the backend is defined by ASPNETCORE_URLS
+      # MYSQL_SERVER:
+      # use this variable to connect to a different database. by default, it is set to sulaunch_database
+      # database-info should be changed accordingly
+
+    networks:
+      - sulaunch_network
+    restart: always
+
+  sulaunch_frontend:
+    container_name: sulaunch_frontend
+    build:
+      context: ./frontend_react
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    networks:
+      - sulaunch_network
+    depends_on:
+      - sulaunch_backend
+    environment:
+      <<: *backend-domain
+
+volumes:
+  sulaunch_database:
+    name: sulaunch_database

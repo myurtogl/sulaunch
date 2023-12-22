@@ -1,0 +1,4 @@
+node_modules
+src/contracts_hardhat/node_modules
+src/contracts_hardhat/artifacts
+src/contracts_hardhat/cache

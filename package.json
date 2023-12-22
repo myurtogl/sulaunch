@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bootstrap": "^4.6.2",
+    "ethers": "^5.7.2",
+    "react-bootstrap-table-next": "^4.0.3",
+    "react-pro-sidebar": "^0.7.1",
+    "react-rating-stars-component": "^2.2.0"
+  }
+}
